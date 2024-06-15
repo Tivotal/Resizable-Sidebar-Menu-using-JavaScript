@@ -1,0 +1,75 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  display: flex;
+  background-color: #fff;
+}
+
+.sidebar {
+  position: relative;
+  width: 240px;
+  height: 100%;
+  background: #222;
+}
+
+.sidebar header {
+  font-size: 28px;
+  color: #fff;
+  line-height: 70px;
+  text-align: center;
+  background: #1b1b1b;
+}
+
+.sidebar a {
+  display: block;
+  height: 65px;
+  width: 100%;
+  color: #fff;
+  line-height: 65px;
+  padding-left: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 5px solid transparent;
+  transition: 0.5s;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+  border-left: 5px solid #4070f4;
+  color: #4070f4;
+}
+
+.sidebar a i {
+  font-size: 23px;
+  margin-right: 16px;
+}
+
+.sidebar a span {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.sidebar .resizer {
+  width: 3px;
+  height: 100%;
+  background: #4070f4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: col-resize;
+}
